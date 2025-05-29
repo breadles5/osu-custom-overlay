@@ -71,7 +71,7 @@ socket.onmessage = event => {
         if (state !== menu.state){
             state = menu.state;
             
-            if(state == 2){
+            if(state === 2 || state === 8){
                 setTimeout(display_section, 1000);
             }
             else{
